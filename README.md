@@ -4,15 +4,20 @@ Autmatyzacja przypadków testowych została stworzona w języku Python (3.7.3) z
 projektowego Page Object Pattern.
 
 
-## Przypadki testowe ujęte w projekcie:
+# Przypadki testowe ujęte w projekcie:
 
 • Weryfikacja komunikatu błędu dla adresu e-mail o błędnej składni (test@test) wprowadzonego w
 oknie logowania do aplikacji,
+
 • Weryfikacja komunikatu błędu dla niewypełnionego pola login (adres e-mail) w oknie logowania,
+
 • Weryfikacja komunikatu błędu dla niewypełnionego pola hasło w oknie logowania do aplikacji,
+
 • Walidacja komunikatu błędu dla wylotu i powrotu odbywającego się z tego samego
 lotniska, w panelu wyszukiwania lotów,
+
 • Weryfikacji poprawności zmiany kierunku lotu, dla lotniska wylotu i lotniska docelowego,
+
 • Weryfikacji zmiany wartości pola data powrotu, po zmianie charakterystyki wyszukiwania
 poprzez wybranie opcji „W jedną stronę”.1. Okno logowania
 
