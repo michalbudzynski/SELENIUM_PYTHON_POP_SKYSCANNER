@@ -93,3 +93,58 @@ Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
 
 ### Oczekiwany rezultat:
 Poniżej pola „Hasło” pojawia się komunikat: „Podaj hasło”
+
+# Wyszukiwarka połączeń:
+
+## Opis przypadków testowych:
+Przypadek testowy test_origin_destination_same_msg (ID: 04) operuje na stronie głównej aplikacji
+skyscanner, w panelu wyszukiwarki lotów. Weryfikuje pojawienie się i treść komunikatu błędu w
+przypadku wyszukania lotów z tego samego lotniska wylotu oraz powrotu.
+
+Przypadek testowy test_change_flight (ID: 05) sprawdza, czy system poprawnie zamienia wartość
+pól dla lotniska wylotu i powrotu w przypadku skorzystania z parametu „Zamień loty”.
+
+Test test_one_way_date (ID: 06) W panelu wyszukiwarki połączeń lotniczych wybiera opcję „W
+jedną stronę” - weryfikuje poprawność zmiany wartości dla pola daty powrotu, po zaznaczeniu
+parametru.
+
+## ID: 04
+Tytuł: Wyszukiwarka połączeń – Weryfikacja komunikatu
+Środowisko: Chrome wersja 74.0.3729.157, Ubuntu 19.04
+Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
+
+###Kroki:
+1. Wejdź na stronę "https://www.skyscanner.pl/"
+2. W polu „Z” Wprowadź wartość „Katowice”
+3. W polu „Do” Wprowadź wartość „Katowice”
+4. Kliknij „Szukaj”
+
+### Oczekiwany rezultat:
+Nad wyszukiwarką połączeń pojawia się komunikat: „Wyszukiwanie niedostępne. Miasto wylotu i
+miasto docelowe nie mogą być te same.”ID: 05
+Tytuł: Wyszukiwarka połączeń – Weryfikacja poprawności działania funkcji „Zamień loty”
+Środowisko: Chrome wersja 74.0.3729.157, Ubuntu 19.04
+Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
+
+###Kroki:
+1. Wejdź na stronę "https://www.skyscanner.pl/"
+2. W polu „Z” Wprowadź wartość „Kraków”
+3. W polu „Do” Wprowadź wartość „Katowice”
+4. Kliknij w przycisk zamiany lotów (dwie niebieskie strzałki)
+
+###Oczekiwany rezultat:
+Zmiana lotniska docelowego z lotniskiem wylotu. Lotnisko wylotu „Z” posiada ustawioną wartość :
+Katowice (KTW), lotnisko docelowe „Do” - „Kraków (KRK)”
+
+## ID: 06
+Tytuł: Wyszukiwarka połączeń – Weryfikacja zmiany wartości pola „Powrót” po wybraniu
+parametru - „W jedną stronę”.
+
+Środowisko: Chrome wersja 74.0.3729.157, Ubuntu 19.04
+Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
+
+###Kroki:
+1. Wejdź na stronę "https://www.skyscanner.pl/"
+2. Kliknij radiobutton „W jedną stronę”
+Oczekiwany rezultat:
+Pole „Powrót” zmienia wartość na „(W jedną stronę)”
