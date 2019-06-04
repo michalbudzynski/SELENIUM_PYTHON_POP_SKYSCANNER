@@ -31,6 +31,7 @@ class FlightSearchBox(object):
     BTN_SEARCH = "//button[@type='submit']"
 
 
+
 class LoginBoxLocators(object):
 
     LOGIN_BY_MAIL_BUTTON = "//div[@data-testid='login-email-button']"
@@ -50,6 +51,8 @@ class LoginBoxLocators(object):
     EMAIL_VALIDATE_BOX = "//div[@id='email_validation_message']"
 
     PASSWORD_VALIDATE_BOX = "//div[@id='password_validation_message']"
+
+    RESET_PASSWORD_BTN = "resetPasswordButton"
 
 
 class CalendarBox(object):
