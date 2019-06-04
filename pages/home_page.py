@@ -7,21 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-class WSB_Testuje(BasePage):
-    def get_knowledge(self):
-        python = WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[@class='python']")))
-
-        python.click()
-
-    def meetup_info(self):
-        info = self.driver.find_element(By.ID, "meetupInfo")
-        info.click()
-
-    def and_more(self):
-        more = self.driver.find_element(By.TAG_NAME, "more")
-        more.click()
-
 class HomePage(BasePage):
 
     def click_login_button(self):
