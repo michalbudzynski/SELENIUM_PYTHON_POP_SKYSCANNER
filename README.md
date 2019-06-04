@@ -113,7 +113,7 @@ Tytuł: Wyszukiwarka połączeń – Weryfikacja komunikatu
 Środowisko: Chrome wersja 74.0.3729.157, Ubuntu 19.04
 Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
 
-###Kroki:
+### Kroki:
 1. Wejdź na stronę "https://www.skyscanner.pl/"
 2. W polu „Z” Wprowadź wartość „Katowice”
 3. W polu „Do” Wprowadź wartość „Katowice”
@@ -126,13 +126,13 @@ Tytuł: Wyszukiwarka połączeń – Weryfikacja poprawności działania funkcji
 Środowisko: Chrome wersja 74.0.3729.157, Ubuntu 19.04
 Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
 
-###Kroki:
+### Kroki:
 1. Wejdź na stronę "https://www.skyscanner.pl/"
 2. W polu „Z” Wprowadź wartość „Kraków”
 3. W polu „Do” Wprowadź wartość „Katowice”
 4. Kliknij w przycisk zamiany lotów (dwie niebieskie strzałki)
 
-###Oczekiwany rezultat:
+### Oczekiwany rezultat:
 Zmiana lotniska docelowego z lotniskiem wylotu. Lotnisko wylotu „Z” posiada ustawioną wartość :
 Katowice (KTW), lotnisko docelowe „Do” - „Kraków (KRK)”
 
@@ -143,7 +143,7 @@ parametru - „W jedną stronę”.
 Środowisko: Chrome wersja 74.0.3729.157, Ubuntu 19.04
 Warunek wstępny: Uruchomiona przeglądarka. Użytkownik nie jest zalogowany.
 
-###Kroki:
+### Kroki:
 1. Wejdź na stronę "https://www.skyscanner.pl/"
 2. Kliknij radiobutton „W jedną stronę”
 Oczekiwany rezultat:
