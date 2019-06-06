@@ -10,10 +10,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 class HomePage(BasePage):
 
     def click_login_button(self):
-        btn = WebDriverWait(self.driver, 10).until(
+        login_btn = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, HomePageLocators.LOGIN_BTN)))
 
-        btn.click()
+        login_btn.click()
+
+    def click_regional_settings(self):
+        settings_btn = WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, HomePageLocators.SETTINGS_BTN)))
+
+        settings_btn.click()
 
 
 class HomePageSearchBox(BasePage):
@@ -88,5 +94,6 @@ class HomePageSearchBox(BasePage):
         dest_field = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, FlightSearchBox.FLY_DESTINATION)))
         return dest_field.get_attribute("value")
+
 
 

@@ -7,6 +7,8 @@ class HomePageLocators(object):
 
     LOGIN_BTN = "//span[@class='login']"
 
+    SETTINGS_BTN = "//*[@id='culture-info']/button"
+
 
 class FlightSearchBox(object):
 

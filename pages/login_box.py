@@ -73,5 +73,6 @@ class LoginBox(BasePage):
 
     def click_reset_password(self):
         reset_password = self.driver.find_element(By.ID, LoginBoxLocators.RESET_PASSWORD_BTN)
+
         reset_password.click()
 

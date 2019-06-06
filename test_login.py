@@ -57,6 +57,5 @@ class LoginToSite(unittest.TestCase):
         assert DataLoginBox.EMPTY_LOGIN_MSG == login_box.get_email_validation_msg()
 
 
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
