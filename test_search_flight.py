@@ -18,15 +18,15 @@ class SearchFlight(unittest.TestCase):
 
     def test_origin_destination_same_msg(self):
         search_box = HomePageSearchBox(self.driver)
-        search_box.set_orgin("Katowice")
-        search_box.set_destinantion("Katowice")
+        search_box.set_origin("Katowice")
+        search_box.set_destination("Katowice")
         search_box.click_search_flight()
         assert DataSearchBox.VALIDATION_MSG == search_box.get_flight_validation_msg()
 
     def test_change_flight(self):
         search_box = HomePageSearchBox(self.driver)
-        search_box.set_orgin("Kraków")
-        search_box.set_destinantion("Katowice")
+        search_box.set_origin("Kraków")
+        search_box.set_destination("Katowice")
         search_box.click_change_flight()
         assert 'Katowice (KTW)' == search_box.get_origin()
 
