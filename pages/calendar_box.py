@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class CalendarBox(BasePage):
+
     def set_month(self, month):
         pass
 
