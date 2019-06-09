@@ -33,7 +33,6 @@ class FlightSearchBox(object):
     BTN_SEARCH = "//button[@type='submit']"
 
 
-
 class LoginBoxLocators(object):
 
     LOGIN_BY_MAIL_BUTTON = "//div[@data-testid='login-email-button']"
@@ -62,3 +61,20 @@ class CalendarBox(object):
     MONTHS = "//select[@name='months']"
 
     DAYS = "//tbody"
+
+
+class RegionalSettings(object):
+
+    SWITCH_ENG = "culture-selector-switch-to-english"
+
+    LANG = "culture-selector-locale"
+
+    REGION = "culture-selector-market"
+
+    CURRENCY = "culture-selector-currency"
+
+    SAVE_BTN = "culture-selector-save"
+
+    CANCEL_BTN = "culture-selector-cancel"
+
+
