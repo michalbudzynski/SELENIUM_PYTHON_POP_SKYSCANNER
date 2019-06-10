@@ -48,14 +48,14 @@ class HomePageSearchBox(BasePage):
 
         change_flight_btn.click()
 
-    def set_destinantion(self, destination):
+    def set_destination(self, destination):
         dest_field = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, FlightSearchBox.FLY_DESTINATION)))
 
         dest_field.click()
         dest_field.send_keys(destination)
 
-    def set_orgin(self, origin):
+    def set_origin(self, origin):
         origin_field = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, FlightSearchBox.FLY_ORIGIN)))
 
@@ -93,6 +93,7 @@ class HomePageSearchBox(BasePage):
     def get_destination(self):
         dest_field = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, FlightSearchBox.FLY_DESTINATION)))
+        
         return dest_field.get_attribute("value")
 
 

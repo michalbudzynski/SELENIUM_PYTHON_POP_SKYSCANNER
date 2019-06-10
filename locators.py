@@ -56,14 +56,14 @@ class LoginBoxLocators(object):
     RESET_PASSWORD_BTN = "resetPasswordButton"
 
 
-class CalendarBox(object):
+class CalendarBoxLocators(object):
 
     MONTHS = "//select[@name='months']"
 
     DAYS = "//tbody"
 
 
-class RegionalSettings(object):
+class RegionalSettingsLocators(object):
 
     SWITCH_ENG = "culture-selector-switch-to-english"
 
@@ -76,5 +76,7 @@ class RegionalSettings(object):
     SAVE_BTN = "culture-selector-save"
 
     CANCEL_BTN = "culture-selector-cancel"
+
+    CLOSE = "//button[@title='Zamknij']"
 
 
