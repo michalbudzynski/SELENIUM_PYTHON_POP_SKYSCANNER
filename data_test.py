@@ -22,5 +22,8 @@ class DataSearchBox(object):
 
     ONE_WAY_DATE = "(W jedną stronę)"
 
+class DataRegionalSettings(object):
+
+    HEADER = "Regional settings"
 
 

@@ -5,6 +5,7 @@ from locators import HomePageLocators, FlightSearchBox
 from pages.base_page import BasePage
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+import time
 
 
 class HomePage(BasePage):
@@ -20,6 +21,7 @@ class HomePage(BasePage):
             EC.element_to_be_clickable((By.XPATH, HomePageLocators.SETTINGS_BTN)))
 
         settings_btn.click()
+        time.sleep(5)
 
 
 class HomePageSearchBox(BasePage):
@@ -93,7 +95,7 @@ class HomePageSearchBox(BasePage):
     def get_destination(self):
         dest_field = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, FlightSearchBox.FLY_DESTINATION)))
-        
+
         return dest_field.get_attribute("value")
 
 

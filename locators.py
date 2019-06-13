@@ -79,4 +79,6 @@ class RegionalSettingsLocators(object):
 
     CLOSE = "//button[@title='Zamknij']"
 
+    HEADER_INFO = "bpk-modal-heading-culture-selector-modal"
+
 

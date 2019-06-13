@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
 
-class RegionalSettings(BasePage):
+class RegionalSettingsBox(BasePage):
 
     def click_switch_to_eng(self):
         switch_btn = WebDriverWait(self.driver, 10).until(
@@ -24,7 +24,7 @@ class RegionalSettings(BasePage):
     def set_language(self, language):
         lang = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.ID, RegionalSettingsLocators.LANG)))
-        
+
         lang.click()
         lang.select_by_visible_text(language)
 
@@ -59,4 +59,9 @@ class RegionalSettings(BasePage):
             EC.element_to_be_clickable((By.ID, RegionalSettingsLocators.CLOSE)))
 
         close_btn.click()
+
+    def get_box_header(self):
+        box_header = self.driver.find_element(By.ID, RegionalSettingsLocators.HEADER_INFO)
+
+        return box_header.text
 
