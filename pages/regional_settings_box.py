@@ -5,6 +5,7 @@ from locators import RegionalSettingsLocators
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 
 
 class RegionalSettingsBox(BasePage):
@@ -39,7 +40,12 @@ class RegionalSettingsBox(BasePage):
             EC.element_to_be_clickable((By.ID, RegionalSettingsLocators.REGION)))
 
         reg.click()
-        reg.select_by_visible_text(region)
+        select = Select(reg)
+
+        # select by visible text
+        select.select_by_visible_text(region)
+
+        reg.click()
 
     def get_currency(self):
         currency = WebDriverWait(self.driver, 10).until(
@@ -64,4 +70,9 @@ class RegionalSettingsBox(BasePage):
         box_header = self.driver.find_element(By.ID, RegionalSettingsLocators.HEADER_INFO)
 
         return box_header.text
+
+    def save_settings(self):
+        save_btn = self.driver.find_element(By.ID, RegionalSettingsLocators.SAVE_BTN)
+
+        save_btn.click()
 

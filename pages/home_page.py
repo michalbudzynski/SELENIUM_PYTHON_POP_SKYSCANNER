@@ -23,6 +23,12 @@ class HomePage(BasePage):
         settings_btn.click()
         time.sleep(5)
 
+    def get_currency(self):
+        settings_btn = WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, HomePageLocators.CURRENCY)))
+
+        return settings_btn.text
+
 
 class HomePageSearchBox(BasePage):
 

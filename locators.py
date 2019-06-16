@@ -9,6 +9,10 @@ class HomePageLocators(object):
 
     SETTINGS_BTN = "//*[@id='culture-info']/button"
 
+    CURRENCY = "//*[@class='CultureSelectorButton_CultureSelectorButton__currency-label__2NkFI']"
+
+        #"//li[@id='culture-info']/button//span"
+
 
 class FlightSearchBox(object):
 

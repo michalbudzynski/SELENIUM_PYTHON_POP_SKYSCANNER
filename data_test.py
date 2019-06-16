@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 
+class DataMainPage(object):
+
+    ENG_WEB_TITLE = "Cheap flights | Free flight comparison at www.skyscanner.pl"
+
+    PL_WEB_TITLE = "Tanie loty | Bezpłatna wyszukiwarka lotów Skyscanner"
+
 
 class DataLoginBox(object):
 
@@ -21,6 +27,7 @@ class DataSearchBox(object):
     VALIDATION_MSG = "Wyszukiwanie niedostępne. Miasto wylotu i miasto docelowe nie mogą być te same."
 
     ONE_WAY_DATE = "(W jedną stronę)"
+
 
 class DataRegionalSettings(object):
 
