@@ -50,7 +50,7 @@ class RegionalSettings(unittest.TestCase):
         time.sleep(5)
 
         home_page = HomePage(self.driver)
-        self.assertIn(home_page.get_currency(), 'kr. DKK')
+        assert home_page.get_currency() == 'kr. DKK'
 
 
 if __name__ == '__main__':
