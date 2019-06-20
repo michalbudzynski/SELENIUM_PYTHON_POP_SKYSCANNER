@@ -6,8 +6,8 @@ install:
 - make deps
 before_script:
 - wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
-- unzip chromedriver_linux64.zip -d ${HOME}/bin/chromedriver
-- export CHROME_BIN=${HOME}/bin/chromedriver
+- unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.7-dev/bin/
+- export CHROME_BIN=chromium-browser
 
 script:
 - make test
