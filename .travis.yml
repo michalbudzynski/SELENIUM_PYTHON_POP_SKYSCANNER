@@ -4,5 +4,10 @@ python:
 - "3.7-dev"
 install:
 - make deps
+before_script:
+- wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_linux64.zip
+- unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.7/bin/
+- export CHROME_BIN=chromium-browser
+
 script:
 - make test
