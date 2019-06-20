@@ -2,6 +2,10 @@
 language: python
 python:
 - "3.7-dev"
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
 install:
 - make deps
 before_script:
