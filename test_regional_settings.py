@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from pages.home_page import HomePage
 from pages.regional_settings_box import RegionalSettingsBox
 from data_test import DataRegionalSettings
@@ -11,7 +12,7 @@ import time
 class RegionalSettings(unittest.TestCase):
     def setUp(self):
 
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome('--no-sandbox')
         self.driver.maximize_window()
         self.driver.get("https://skyscanner.pl/")
 

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import unittest
 from selenium import webdriver
 from pages.home_page import HomePage
@@ -8,7 +10,7 @@ from data_test import DataLoginBox
 class LoginToSite(unittest.TestCase):
     def setUp(self):
 
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome('--no-sandbox')
         self.driver.maximize_window()
         self.driver.get("https://skyscanner.pl/")
 
