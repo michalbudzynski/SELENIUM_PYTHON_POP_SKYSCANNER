@@ -11,7 +11,9 @@ class HomePageLocators(object):
 
     CURRENCY = "//*[@class='CultureSelectorButton_CultureSelectorButton__currency-label__2NkFI']"
 
-        #"//li[@id='culture-info']/button//span"
+    COOKIE_BOX = "//*[@class ='CookieBanner_CookieBanner__wrapper__173Hh']"
+
+    COOKIE_BOX_BTN_CLOSE = "//button[text()='Zamknij']"
 
 
 class FlightSearchBox(object):
