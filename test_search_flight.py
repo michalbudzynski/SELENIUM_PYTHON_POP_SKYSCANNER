@@ -18,6 +18,9 @@ class SearchFlight(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get("https://skyscanner.pl/")
 
+        cookie_banner = HomePage(self.driver)
+        cookie_banner.close_cookie_box()
+
     def tearDown(self):
 
         self.driver.quit()
