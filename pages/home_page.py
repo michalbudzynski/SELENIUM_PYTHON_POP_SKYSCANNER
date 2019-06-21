@@ -29,6 +29,15 @@ class HomePage(BasePage):
 
         return settings_btn.text
 
+    def close_cookie_box(self):
+        time.sleep(2)
+        cookie_box = self.driver.find_element(By.XPATH, HomePageLocators.COOKIE_BOX)
+
+        close_button = self.driver.find_element(By.XPATH, HomePageLocators.COOKIE_BOX_BTN_CLOSE)
+
+        if cookie_box.is_displayed():
+            close_button.click()
+
 
 class HomePageSearchBox(BasePage):
 
