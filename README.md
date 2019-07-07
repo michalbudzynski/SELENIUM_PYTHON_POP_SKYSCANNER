@@ -1,3 +1,10 @@
+# TRAVIS CI INTEGRATION
+https://travis-ci.org/michalbudzynski/SELENIUM_PYTHON_POP_SKYSCANNER
+
+TEST STATUS :
+[![Build Status](https://travis-ci.org/michalbudzynski/SELENIUM_PYTHON_POP_SKYSCANNER.svg?branch=master)](https://travis-ci.org/michalbudzynski/SELENIUM_PYTHON_POP_SKYSCANNER)
+
+
 # Wstęp
 
 Autmatyzacja przypadków testowych została stworzona w języku Python (3.7.3) z zastosowaniem wzorca
