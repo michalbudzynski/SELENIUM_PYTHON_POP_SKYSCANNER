@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from selenium.webdriver.common.by import By
 
 from locators import LoginBoxLocators
@@ -31,12 +32,12 @@ class LoginBox(BasePage):
         email_field.click()
         email_field.send_keys(DataLoginBox.INCORRECT_MAIL)
 
-    def set_password(self):
+    def set_password(self, password):
         password_field = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, LoginBoxLocators.PASSWORD_FIELD)))
 
         password_field.click()
-        password_field.send_keys("123")
+        password_field.send_keys(password)
 
     def get_email_validation_msg(self):
         email_validate_msg = WebDriverWait(self.driver, 10).until(
@@ -49,7 +50,7 @@ class LoginBox(BasePage):
         return password_validate_msg.text
 
     def click_register_account(self):
-        register_btn = self.driver.find_element(By.XPATH, LoginBoxLocators.SUBMIT_BUTTON)
+        register_btn = self.driver.find_element(By.XPATH, LoginBoxLocators.REGISTER_BUTTON)
         register_btn.click()
 
     def set_email(self):
@@ -75,4 +76,21 @@ class LoginBox(BasePage):
         reset_password = self.driver.find_element(By.ID, LoginBoxLocators.RESET_PASSWORD_BTN)
 
         reset_password.click()
+
+    def check_strong_password(self, value):
+
+        if value == "min_char":
+            min_char = self.driver.find_element(By.XPATH, LoginBoxLocators.MIN_CHAR_VALIDATION)
+            assert min_char.is_displayed()
+
+        elif value == "upper_lower":
+            upper_lower = self.driver.find_element(By.XPATH, LoginBoxLocators.UPPER_LOWER_VALIDATION)
+            assert upper_lower.is_displayed()
+
+        elif value == "number":
+            number = self.driver.find_element(By.XPATH, LoginBoxLocators.NUMBER_VALIDATION)
+            assert number.is_displayed()
+
+    def login_to_website(self):
+        pass
 

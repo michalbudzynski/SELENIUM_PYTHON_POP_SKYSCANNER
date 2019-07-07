@@ -53,13 +53,21 @@ class LoginBoxLocators(object):
 
     REGISTER_BUTTON = "//button[@data-testid='login-signup-toggle-button']"
 
-    SUBMIT_BUTTON = "//button[@data-testid='login-button']"
+    SUBMIT_BUTTON = "//button[@data-testid='signup-button']"
+
+    CONTINUE_REGISTER_BUTTON = "//button[@data-testid='signup-button']"
 
     EMAIL_VALIDATE_BOX = "//div[@id='email_validation_message']"
 
     PASSWORD_VALIDATE_BOX = "//div[@id='password_validation_message']"
 
     RESET_PASSWORD_BTN = "resetPasswordButton"
+
+    UPPER_LOWER_VALIDATION = "//*[@data-testid='upper-lower-validation']"
+
+    NUMBER_VALIDATION = "//*[@data-testid='number-validation']"
+
+    MIN_CHAR_VALIDATION = "//*[@data-testid='min-char-validation']"
 
 
 class CalendarBoxLocators(object):

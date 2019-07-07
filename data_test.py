@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class DataMainPage(object):
 
     ENG_WEB_TITLE = "Cheap flights | Free flight comparison at www.skyscanner.pl"
@@ -18,8 +19,6 @@ class DataLoginBox(object):
     EMPTY_LOGIN_MSG = "Podaj adres e-mail"
 
     EMPTY_PASSWORD_MSG = "Podaj hasło"
-
-    CORRECT_EMAIL = "test@test.pl"
 
 
 class DataSearchBox(object):

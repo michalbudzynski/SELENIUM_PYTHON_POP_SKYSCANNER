@@ -7,5 +7,6 @@ class BasePage(object):
         self.driver = driver
         self._verify_page()
 
+
     def _verify_page(self):
         return
