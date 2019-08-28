@@ -1,5 +1,8 @@
 # TRAVIS CI INTEGRATION
 https://travis-ci.org/michalbudzynski/SELENIUM_PYTHON_POP_SKYSCANNER
+# UPDATE - all tests fail - 28.08.2019 skyscanner has introduced a mechanism to check the movement of robots on website
+
+
 
 TEST STATUS :
 [![Build Status](https://travis-ci.org/michalbudzynski/SELENIUM_PYTHON_POP_SKYSCANNER.svg?branch=master)](https://travis-ci.org/michalbudzynski/SELENIUM_PYTHON_POP_SKYSCANNER)
