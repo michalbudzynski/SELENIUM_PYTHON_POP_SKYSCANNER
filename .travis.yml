@@ -9,7 +9,7 @@ addons:
 install:
 - make deps
 before_script:
-- wget https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_linux64.zip
+- wget https://chromedriver.storage.googleapis.com/76.0.3809.126/chromedriver_linux64.zip
 - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.7-dev/bin/
 - export CHROME_BIN=chromium-browser
 
